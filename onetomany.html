@@ -2,13 +2,28 @@
 	<label for="{{ property.name }}" class="col-sm-2 control-label">{{ property.description }}</label>
 	<div class="col-sm-10">
 {% for bean in bean[property.name] %}
-		<p class="form-control-static"><a href="{{ path_for('getbean', { 'beantype': property.name, 'id': bean.id }) }}">{{ bean.title }}</a></p>
-		<input type="hidden" name="{{ property.name }}[]" value="{{ bean.id }}">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="{{ property.name }}[]" value="{{ bean.id }}" checked="checked"> <a href="{{ path_for('getbean', { 'beantype': property.name, 'id': bean.id }) }}">{{ bean.title }}</a>
+			</label>
+		</div>
 {% endfor %}
 		<select class="form-control select2" name="{{ property.name }}[]">
+			<option value="" selected="selected">Select to add a {{ property.name }}</option>
 {% for option in property.options %}
 			<option value="{{ option.id }}">{{ option.title }}</option>
 {% endfor %}
 		</select>
 	</div>
 </div>
+
+
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>

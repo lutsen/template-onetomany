@@ -3,7 +3,7 @@
 	<div class="col-sm-10">
 {% for bean in bean[property.name] %}
 		<p class="form-control-static"><a href="{{ path_for('getbean', { 'beantype': property.name, 'id': bean.id }) }}">{{ bean.title }}</a></p>
-		<input type="hidden" name="{{ property.name }}[]" value="bean.id">
+		<input type="hidden" name="{{ property.name }}[]" value="{{ bean.id }}">
 {% endfor %}
 		<select class="form-control select2" name="{{ property.name }}[]">
 {% for option in property.options %}

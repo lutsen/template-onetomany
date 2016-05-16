@@ -7,7 +7,7 @@
 {% endfor %}
 		<select class="form-control select2" name="{{ property.name }}[]">
 {% for option in property.options %}
-			<option value="{{ option.id }}">{{ option.name }}</option>
+			<option value="{{ option.id }}">{{ option.title }}</option>
 {% endfor %}
 		</select>
 	</div>

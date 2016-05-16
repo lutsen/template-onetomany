@@ -8,11 +8,13 @@
 			</label>
 		</div>
 {% endfor %}
+{% if property.options and property.options|length > 0 %}
 		<select class="form-control select2" name="{{ property.name }}[]">
 			<option value="" selected="selected">Select to add a {{ property.name }}</option>
-{% for option in property.options %}
+{% 	for option in property.options %}
 			<option value="{{ option.id }}">{{ option.title }}</option>
-{% endfor %}
+{% 	endfor %}
 		</select>
+{% 	endif %}
 	</div>
 </div>

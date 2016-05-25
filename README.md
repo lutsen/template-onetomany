@@ -3,7 +3,7 @@
 Lagan Properties Text Input Template
 ====================================
 
-Admin template to edit Lagan one-to-many properties.
+Admin template to edit Lagan one-to-many and many-to-many properties.
 
 To be used with [Lagan](https://github.com/lutsen/lagan). Lagan lets you create flexible content objects with a simple class, and manage them with a web interface.
 

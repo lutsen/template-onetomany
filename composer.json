@@ -1,8 +1,8 @@
 {
-	"name": "lagan/template-onetomany",
+	"name": "lagan/template-tomany",
 	"type": "lagan-template",
-	"description": "Template to edit Lagan one-to-many properties.",
-	"keywords": ["lagan","onetomany", "one-to-many", "property","template"],
+	"description": "Template to edit Lagan one-to-many and many-to-many properties.",
+	"keywords": ["lagan","onetomany", "many-to-many", "one-to-many", "property","template"],
 	"license": "MIT",
 	"authors": [
 		{

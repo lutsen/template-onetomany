@@ -1,7 +1,7 @@
 [<img src="https://cdn.rawgit.com/lutsen/lagan/master/lagan-logo.svg" width="100" alt="Lagan">](https://github.com/lutsen/lagan)
 
-Lagan Properties Text Input Template
-====================================
+Lagan Properties One To Many and Many To Many Input Template
+============================================================
 
 Admin template to edit Lagan one-to-many and many-to-many properties.
 
